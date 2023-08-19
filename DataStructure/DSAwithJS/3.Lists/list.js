@@ -118,16 +118,16 @@ class Customer {
 }
 
 // test
-// console.log("====== test 1 ====== (append, remove, clear)");
-// let names = new List();
-// names.append('Cynthia');
-// names.append('Raymond');
-// names.append('Barbara');
-// console.log(names.toString());
-// names.remove('Raymond');
-// console.log(names.toString());
-// names.clear();
-// console.log(names.toString());
+console.log("====== test 1 ====== (append, remove, clear)");
+let names = new List();
+names.append('Cynthia');
+names.append('Raymond');
+names.append('Barbara');
+console.log(names.toString());
+names.remove('Raymond');
+console.log(names.toString());
+names.clear();
+console.log(names.toString());
 
 // // test 2
 // console.log("====== test 2 ====== (front, end, prev, next, currPos, moveTo, getElement)");
@@ -173,54 +173,54 @@ class Customer {
 //   }
 // }
 
-function displayList(list) {
-  for (list.front(); list.currPos() < list.length(); list.next()) {
-    if (list.getElement() instanceof Customer) {
-      console.log(list.getElement()["name"] + ", " + list.getElement()["movie"]);
-    } else {
-      console.log(list.getElement());
-    }
-  }
-}
+// function displayList(list) {
+//   for (list.front(); list.currPos() < list.length(); list.next()) {
+//     if (list.getElement() instanceof Customer) {
+//       console.log(list.getElement()["name"] + ", " + list.getElement()["movie"]);
+//     } else {
+//       console.log(list.getElement());
+//     }
+//   }
+// }
 
-function checkOut(name, movie, filmList, customerList) {
-  if (filmList.contains(movie)) {
-    let c = new Customer(name, movie);
-    customerList.append(c);
-    filmList.remove(movie);
-  } else {
-    console.log(movie + " is not available.");
-  }
-}
+// function checkOut(name, movie, filmList, customerList) {
+//   if (filmList.contains(movie)) {
+//     let c = new Customer(name, movie);
+//     customerList.append(c);
+//     filmList.remove(movie);
+//   } else {
+//     console.log(movie + " is not available.");
+//   }
+// }
 
 
-// test 4
-console.log("====== test 4 ====== (read file)");
-let fs = require('fs');
-fs.readFile('./films.txt', 'utf8', function(err, data) {
-  if (err) {
-    return console.log(err);
-  }
-  let movies = data.split('\n');
+// // test 4
+// console.log("====== test 4 ====== (read file)");
+// let fs = require('fs');
+// fs.readFile('./films.txt', 'utf8', function(err, data) {
+//   if (err) {
+//     return console.log(err);
+//   }
+//   let movies = data.split('\n');
   
-  let movieList = new List();
-  let customers = new List();
-  movies.forEach(item => {
-    movieList.append(item);
-  })
+//   let movieList = new List();
+//   let customers = new List();
+//   movies.forEach(item => {
+//     movieList.append(item);
+//   })
 
-  console.log("Available movies: \n");
-  displayList(movieList);
+//   console.log("Available movies: \n");
+//   displayList(movieList);
 
-  let name = "Jane Doe";
-  let movie = "The Godfather";
+//   let name = "Jane Doe";
+//   let movie = "The Godfather";
 
-  checkOut(name, movie, movieList, customers);
+//   checkOut(name, movie, movieList, customers);
 
-  console.log("\n=== Customer Rentals: ===\n");
-  displayList(customers);
+//   console.log("\n=== Customer Rentals: ===\n");
+//   displayList(customers);
 
-  console.log("\n=== Movies Now Available ===\n");
-  displayList(movieList);
+//   console.log("\n=== Movies Now Available ===\n");
+//   displayList(movieList);
 
-});
+// });
