@@ -3,7 +3,7 @@ def solution(arr):
   for x in range(2, arr[-1]):
     is_divided = False
     for n in arr:
-      if n%x == 0:
+      if n % x == 0:
         is_divided = True
         break
     if not is_divided:

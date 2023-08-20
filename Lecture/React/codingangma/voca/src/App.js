@@ -1,12 +1,19 @@
-import Hello from './component/Hello'
-import style from './App.module.css'
+import Header from "./component/Header";
+import DayList from "./component/DayList";
+import Day from "./component/Day";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
-      <Hello/>
-      <div className={style.box}></div>
+      <Header />
+      <Switch>
+        <DayList />
+        <Day day={1}/>
+      </Switch>
     </div>
+    </BrowserRouter>
   );
 }
 
