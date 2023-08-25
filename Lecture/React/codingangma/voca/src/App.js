@@ -9,8 +9,12 @@ function App() {
     <div className="App">
       <Header />
       <Switch>
-        <DayList />
-        <Day day={1}/>
+        <Route exact path="/">
+          <DayList />
+        </Route>
+        <Route path="/day">
+          <Day day={1}/>
+        </Route>
       </Switch>
     </div>
     </BrowserRouter>
