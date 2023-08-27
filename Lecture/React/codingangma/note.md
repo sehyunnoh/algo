@@ -2,7 +2,7 @@
 > `create-react-app`, `functional component`, `jsx`, `useState`, `useEffect`, `react hook`, `json-server`, `rest api`, `CRUD`
 
 ```js
-npx create-react-app voca
+npx create-react-app voca // if we use npx, we don't need to install create-react-app (npm에 있는 package를 바로 실행 시켜줌)
 npm start
 ```
 
