@@ -15,3 +15,5 @@ class CircularlyLinkedList extends LinkedList {
     }
   }
 }
+
+module.exports = CircularlyLinkedList;
