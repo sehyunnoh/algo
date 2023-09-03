@@ -38,3 +38,7 @@ console.log("PreOrder traversal: ");
 preOrder(nums.root);
 console.log("PostOrder traversal: ");
 postOrder(nums.root);
+
+nums.remove(16);
+console.log("InOrder traversal: ");
+inOrder(nums.root);
