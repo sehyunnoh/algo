@@ -5,3 +5,4 @@
 - 최대 공약수: GCD(the greatest common denominator)
 - 최소 공배수: LCM(the least common multiple)
 - 소수: prime number
+- 순열: permutation
