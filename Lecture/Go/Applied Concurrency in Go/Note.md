@@ -1,0 +1,2 @@
+- [Lynda](https://www.linkedin.com/learning/applied-concurrency-in-go/general-prerequisites?autoSkip=true&resume=false&u=73722356)
+- [GitHub](https://github.com/LinkedInLearning/applied-concurrency-in-go-3164282)
