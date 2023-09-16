@@ -6,3 +6,4 @@
 - 최소 공배수: LCM(the least common multiple)
 - 소수: prime number
 - 순열: permutation
+- 조합: combination
