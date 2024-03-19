@@ -6,15 +6,26 @@ class TreeNode:
     self.left = left
     self.right = right
     
+# class Solution:
+#   def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+#     result = []
+#     def dfs(root, result):
+#       if root is None: return
+#       dfs(root.left, result)
+#       dfs(root.right, result)
+#       result.append(root.val)
+#     dfs(root, result)
+#     return result
+  
 class Solution:
   def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
     result = []
-    def dfs(root, result):
+    def dfs(root):
       if root is None: return
-      dfs(root.left, result)
-      dfs(root.right, result)
+      dfs(root.left)
+      dfs(root.right)
       result.append(root.val)
-    dfs(root, result)
+    dfs(root)
     return result
   
 
