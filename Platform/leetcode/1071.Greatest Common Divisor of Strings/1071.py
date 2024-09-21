@@ -1,3 +1,7 @@
+# Time complexity: O(min(len(str1, len(str2))))
+# Space complexity: O(len(str1) + len(str2))
+
+
 class Solution:
   def gcdOfStrings(self, str1:str, str2:str) -> str:
     min_str = min(str1, str2)
