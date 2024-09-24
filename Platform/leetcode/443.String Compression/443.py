@@ -29,6 +29,9 @@ from typing import List
 
 
 
+# Time complexity: O(n*log(n))
+# Space complexity: O(1)
+
 class Solution:
   def compress(self, chars: List[str]) -> int:
     def record(chars, index, i, j):

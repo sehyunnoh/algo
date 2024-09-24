@@ -1,7 +1,7 @@
 from typing import List
 
 # time complexity: O(n)
-# space complexity: O(1)
+# space complexity: O(n)
 
 class Solution:
   def productExceptSelf(self, nums: List[int]) -> List[int]:
