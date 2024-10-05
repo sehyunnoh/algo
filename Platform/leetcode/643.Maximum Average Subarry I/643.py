@@ -2,13 +2,10 @@ from typing import List
 
 class Solution:
   def findMaxAverage(self, nums: List[int], k: int) -> float:
-    i, j = 0, k-1
     max_val = sum_val = sum(nums[:k])
-    for _ in range(len(nums)-k):
-      sum_val = sum_val-nums[i]+nums[j+1]
+    for i in range(len(nums)-k):
+      sum_val = sum_val-nums[i]+nums[i+k]
       max_val = max(max_val, sum_val)
-      i += 1
-      j += 1
     return max_val / k
       
   
