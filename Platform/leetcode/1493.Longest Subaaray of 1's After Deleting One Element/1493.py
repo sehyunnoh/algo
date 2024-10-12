@@ -15,6 +15,6 @@ class Solution:
         
   
 s = Solution()
-print(s.longestSubarray([1,1,0,1])) # 3
+# print(s.longestSubarray([1,1,0,1])) # 3
 print(s.longestSubarray([0,1,1,1,0,1,1,0,1])) # 5
-print(s.longestSubarray([1,1,1])) # 2
+# print(s.longestSubarray([1,1,1])) # 2
